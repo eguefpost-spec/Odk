@@ -1,0 +1,36 @@
+linkedin:
+  email: "votre@email.com"
+  password: "votre_mot_de_passe"
+
+search:
+  keywords:
+    - "Développeur Python"
+    - "Data Engineer"
+  location: "Paris, France"
+  remote: true
+  experience_levels:
+    - mid_senior
+    - associate
+  date_posted: "week"
+  easy_apply_only: true
+
+auto_apply:
+  enabled: false
+  max_per_run: 10
+  cover_letter: |
+    Bonjour,
+    Je vous contacte concernant votre offre. Mon profil correspond à vos besoins.
+    Cordialement.
+
+notifications:
+  email:
+    enabled: false
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    sender: "votre@email.com"
+    password: "app_password_gmail"
+    recipient: "votre@email.com"
+  min_jobs_to_notify: 3
+
+database:
+  path: "data/jobs.db"
