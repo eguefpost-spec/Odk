@@ -1,0 +1,35 @@
+linkedin:
+  email: "VOTRE_EMAIL_ICI"
+  password: "VOTRE_MOT_DE_PASSE_ICI"
+
+search:
+  keywords:
+    - "Chef de projet humanitaire"
+    - "MEAL Officer"
+    - "Coordinateur RRM"
+    - "Resilience Sahel"
+    - "Geographe"
+  location: "Niger"
+  remote: true
+  experience_levels:
+    - mid_senior
+    - associate
+  date_posted: "week"
+  easy_apply_only: true
+
+auto_apply:
+  enabled: false
+  max_per_run: 10
+
+notifications:
+  email:
+    enabled: false
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    sender: "VOTRE_EMAIL_ICI"
+    password: "APP_PASSWORD_GMAIL"
+    recipient: "VOTRE_EMAIL_ICI"
+  min_jobs_to_notify: 3
+
+database:
+  path: "data/jobs.db"
