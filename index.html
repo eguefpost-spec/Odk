@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scene">
+    <h1 class="title">PORTFOLIO BOOK</h1>
+    <p class="subtitle">Featured Work and Contact Me!</p>
+
+    <div class="book" id="book">
+
+      <!-- Page 1 : Couverture -->
+      <div class="book-page" id="page1">
+        <div class="page-face page-face--front cover-front">
+          <div class="cover-content">
+            <div class="cover-avatar">
+              <img src="photo.jpg" alt="Photo de profil" class="profile-photo" />
+            </div>
+            <h2>Votre Nom</h2>
+            <p class="cover-role">Développeur Full Stack &amp; Designer</p>
+            <div class="cover-tags">
+              <span>React</span><span>Node.js</span><span>UI/UX</span>
+            </div>
+            <div class="cover-arrow">Ouvrir ↓</div>
+          </div>
+        </div>
+        <div class="page-face page-face--back">
+          <div class="page-inner">
+            <h3>À propos de moi</h3>
+            <div class="about-photo-wrap">
+              <img src="photo.jpg" alt="Photo de profil" class="about-photo" />
+            </div>
+            <p>Passionné par le développement web et la création d'expériences numériques mémorables. Je combine code et design pour livrer des produits qui ont du sens.</p>
+            <ul class="skills-list">
+              <li>⚡ 3 ans d'expérience</li>
+              <li>🎨 UI/UX Design</li>
+              <li>🚀 Performance &amp; SEO</li>
+              <li>🤝 Travail en équipe agile</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 : Projet 1 -->
+      <div class="book-page" id="page2">
+        <div class="page-face page-face--front">
+          <div class="page-inner">
+            <h3 class="section-label">Featured Work</h3>
+            <div class="project-mockup mockup-1">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content"></div>
+            </div>
+            <h4>DraftKit AI</h4>
+            <a href="#" class="live-preview">Live Preview ↗</a>
+            <div class="tech-tags">
+              <span>React</span><span>OpenAI API</span><span>Node.js</span>
+            </div>
+            <p class="project-desc">Assistant de rédaction IA avec mémoire de marque, préréglages de ton et export CMS en un clic. Construit pour les équipes marketing.</p>
+            <ul class="features">
+              <li>Brand voice — ton personnalisé par client</li>
+              <li>Smart editor — suggestions et notation IA</li>
+              <li>Content score — lisibilité, SEO &amp; originalité</li>
+              <li>Export — WordPress, Webflow, HubSpot</li>
+            </ul>
+            <div class="page-btns">
+              <a href="#" class="btn-source">Source Code</a>
+              <a href="#" class="btn-demo">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-face page-face--back">
+          <div class="page-inner">
+            <h3 class="section-label">Featured Work</h3>
+            <div class="project-mockup mockup-2">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content"></div>
+            </div>
+            <h4>ShopFlow E-commerce</h4>
+            <a href="#" class="live-preview">Live Preview ↗</a>
+            <div class="tech-tags">
+              <span>Next.js</span><span>Stripe</span><span>Tailwind</span>
+            </div>
+            <p class="project-desc">Plateforme e-commerce moderne avec panier dynamique, paiement sécurisé et tableau de bord admin en temps réel.</p>
+            <ul class="features">
+              <li>Panier persistant avec état Redux</li>
+              <li>Paiement Stripe avec webhooks</li>
+              <li>Dashboard admin avec analytics</li>
+              <li>PWA — installable sur mobile</li>
+            </ul>
+            <div class="page-btns">
+              <a href="#" class="btn-source">Source Code</a>
+              <a href="#" class="btn-demo">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 : Projet 3 + Contact -->
+      <div class="book-page" id="page3">
+        <div class="page-face page-face--front">
+          <div class="page-inner">
+            <h3 class="section-label">Featured Work</h3>
+            <div class="project-mockup mockup-3">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content"></div>
+            </div>
+            <h4>TaskBoard Pro</h4>
+            <a href="#" class="live-preview">Live Preview ↗</a>
+            <div class="tech-tags">
+              <span>Vue.js</span><span>Firebase</span><span>Figma</span>
+            </div>
+            <p class="project-desc">Application de gestion de tâches collaborative avec drag &amp; drop, notifications en temps réel et intégrations tierces.</p>
+            <ul class="features">
+              <li>Drag &amp; drop avec animations fluides</li>
+              <li>Collaboration temps réel via WebSockets</li>
+              <li>Intégrations Slack, GitHub, Notion</li>
+              <li>Mode sombre / clair automatique</li>
+            </ul>
+            <div class="page-btns">
+              <a href="#" class="btn-source">Source Code</a>
+              <a href="#" class="btn-demo">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-face page-face--back contact-page">
+          <div class="page-inner">
+            <h3>Contact Me!</h3>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your name" />
+              <label>Email Address</label>
+              <input type="email" placeholder="you@email.com" />
+              <label>Your Message</label>
+              <textarea placeholder="Tell me about your project..."></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 : Réseaux + Couverture arrière -->
+      <div class="book-page" id="page4">
+        <div class="page-face page-face--front">
+          <div class="page-inner center-content">
+            <div class="social-links">
+              <div class="social-photo-wrap">
+                <img src="photo.jpg" alt="Photo" class="social-photo" />
+              </div>
+              <h3>Restons connectés</h3>
+              <div class="socials">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Dribbble</a>
+              </div>
+              <p class="email-link">hello@yourname.dev</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-face page-face--back cover-back">
+          <div class="cover-content">
+            <p style="color:#94a3b8; font-size:0.9rem;">Merci d'avoir feuilleté mon portfolio ✨</p>
+            <div class="cover-avatar small">
+              <img src="photo.jpg" alt="Photo" class="profile-photo" />
+            </div>
+            <p class="back-name">Votre Nom</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-controls">
+      <button class="nav-btn" id="prevBtn" onclick="prevPage()">&#8249; Previous</button>
+      <div class="page-dots" id="pageDots"></div>
+      <button class="nav-btn" id="nextBtn" onclick="nextPage()">Next &#8250;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
